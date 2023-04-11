@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <title>Agenda</title>
+  </head>
+  <body>
+    <header>
+      <img src="./images/agenda.png" alt="Icone de uma agenda telefônica" />
+      <h1>Agenda de contatos</h1>
+    </header>
+
+    <form id="form">
+      <input type="text" id="name" required placeholder="Nome do contato" />
+      <input
+        type="tel"
+        id="tel"
+        required
+        placeholder="Telefone"
+        minlength="8"
+        maxlength="11"
+      />
+      <button id="button">Incluir</button>
+    </form>
+
+    <table cellspacing="0">
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>Telefone</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+      <tfoot>
+        <tr>
+          <td>Quantidade de contatos:</td>
+          <td id="totalContatos">---</td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
